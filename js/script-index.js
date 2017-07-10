@@ -24,6 +24,12 @@ $( "#hide" ).hide();
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	recipesArray.forEach(function(r){/*forEach para que recorra los objetos*/
+		if(r.highlighted == true){/*la condicion if para los resaltados*/
+		renderRecipe(r);
+	}
+
+	});
 }
 
 /*
